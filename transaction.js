@@ -6,7 +6,7 @@ import fs from 'fs';
 async function transaction() {
 
 // Read the account details from JSON
-      const accountData = JSON.parse(fs.readFileSync('account.json', 'utf8'));
+      const accountData = JSON.parse(fs.readFileSync('account_details.json', 'utf8'));
       const { address, privateKey } = accountData;
 
  // Convert the private key from base64 string back to Uint8Array

@@ -22,7 +22,7 @@ async function createAccountAndExport() {
   console.log(`My passphrase: ${passphrase}`);
   console.log(`My private key: ${privateKeyBase64}`);
 
-  c
+
   // dispense testnet algos
   const dispenser_url = `https://bank.testnet.algorand.network/?account=${generatedAccount.addr}`;
   console.log(`Fund the wallet via Algorand Dispenser: ${dispenser_url}`);
@@ -35,9 +35,9 @@ async function createAccountAndExport() {
     passphrase: passphrase,
     privateKey: privateKeyBase64,
   };
-  fs.writeFileSync('account.json', JSON.stringify(accountData, null, 2));
+  fs.writeFileSync('account_details.json', JSON.stringify(accountData, null, 2));
 
-  console.log("Account details exported to account.json");
+  console.log("Account details exported to account_details.json");
 
   process.exit();
 }

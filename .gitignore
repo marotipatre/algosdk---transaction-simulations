@@ -1,6 +1,4 @@
 /node_modules
-/node_modules
 /dist
-/account.json
-
+/account_details.json
 
