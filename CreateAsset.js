@@ -51,7 +51,7 @@ const algodClient = new algosdk.Algodv2(algodToken, algodServer, algodPort);
   console.log(`Asset ID created: ${assetIndex}`);
 
   // Display AlgoExplorer URL
-  const url = `https://app.dappflow.org/explorer/asset/${assetIndex}`;
+  const url = `https://lora.algokit.io/testnet/asset/${assetIndex}`;
   console.log(`Asset URL: ${url}`);
 
   // End the console

@@ -15,7 +15,7 @@ async function createAccountAndExport() {
   const passphrase = algosdk.secretKeyToMnemonic(generatedAccount.sk);
   console.log(`My address: ${generatedAccount.addr}`);
   console.log(`My passphrase: ${passphrase}`);
-  const dispenser_url = `https://dispenser.testnet.aws.algodev.network/?account=${generatedAccount.addr}`;
+  const dispenser_url = `https://bank.testnet.algorand.network/?account=${generatedAccount.addr}`;
   console.log(`Fund the wallet via Algorand Dispenser: ${dispenser_url}`);
   console.log("Press any key when the account is funded");
   await keypress();
