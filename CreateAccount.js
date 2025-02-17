@@ -34,6 +34,7 @@ async function createAccountAndExport() {
     address: generatedAccount.addr,
     passphrase: passphrase,
     privateKey: privateKeyBase64,
+    generatedAccount : generatedAccount // Include the whole account object
   };
   fs.writeFileSync('account_details.json', JSON.stringify(accountData, null, 2));
 
